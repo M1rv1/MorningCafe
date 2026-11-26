@@ -1,49 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="MORNING — уютная кофейня с ароматным кофе, свежей выпечкой и приятной атмосферой.">
-<title>MORNING — кофейня</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b0d08">
+  <meta name="description" content="Михаил Васильев — студент прикладной информатики, интересуюсь машинным и глубоким обучением.">
+  <title>Михаил Васильев — AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header"><div class="container header-content">
-<a href="#home" class="logo">MORNING<span>.</span></a>
-<nav class="navigation"><a href="#home">Главная</a><a href="#about">О кофейне</a><a href="#gallery">Галерея</a><a href="#contacts">Контакты</a></nav>
-<a href="#contacts" class="header-button">Найти нас</a>
-</div></header>
+<header class="header">
+  <a class="brand" href="#home"><span class="brand-mark">МВ</span> Михаил Васильев</a>
+  <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+  <nav class="nav">
+    <a href="#about">Обо мне</a><a href="#education">Обучение</a><a href="#skills">Навыки</a><a href="#goals">Цели</a><a class="nav-cta" href="#contacts">Контакты ↗</a>
+  </nav>
+</header>
+
 <main>
-<section class="hero" id="home"><div class="container hero-content">
-<div class="hero-text"><p class="subtitle">ВАШЕ МЕСТО ДЛЯ ВДОХНОВЕНИЯ</p><h1>Начни свой день <span>с хорошего кофе.</span></h1>
-<p class="hero-description">MORNING — небольшая городская кофейня, где утро начинается с аромата свежесваренного кофе, вкусной выпечки и приятной атмосферы.</p>
-<a href="#about" class="primary-button">Открыть для себя <span>→</span></a><div class="hero-note"><span class="note-dot"></span>С любовью к каждой чашке</div></div>
-<div class="hero-image"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Свежесваренный кофе на столе"><div class="image-label"><span>☕</span><div><strong>Fresh coffee</strong><small>Каждый день с 8:00</small></div></div></div>
-</div></section>
-<section class="about section" id="about"><div class="container"><div class="section-heading"><p class="subtitle">НАША ФИЛОСОФИЯ</p><h2>Немного больше,<br>чем просто кофе.</h2></div>
-<div class="about-content"><div class="about-image"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=900&q=85" alt="Интерьер уютной кофейни"></div>
-<div class="about-text"><p>Мы создали MORNING для тех, кто ценит небольшие радости повседневной жизни. Для человека, который забегает за кофе перед работой, для друзей, встречающихся после долгой недели, и для тех, кому просто хочется немного побыть наедине с собой.</p>
-<p>В основе нашей работы — качественные кофейные зёрна, внимание к деталям и искреннее желание сделать каждый визит приятным. Мы самостоятельно подбираем сочетания вкусов, следим за качеством напитков и каждый день готовим свежую выпечку.</p>
-<p>Для нас кофейня — это не только напитки и еда. Это атмосфера, в которую хочется возвращаться.</p><a href="#contacts" class="text-link">Заглянуть к нам <span>→</span></a></div></div></div></section>
-<section class="features"><div class="container features-grid">
-<div class="feature"><div class="feature-icon">☕</div><h3>Качественный кофе</h3><p>Отборные зёрна и внимательное приготовление каждого напитка.</p></div>
-<div class="feature"><div class="feature-icon">🥐</div><h3>Свежайшая выпечка</h3><p>Вкусные десерты и выпечка, которые отлично дополняют кофе.</p></div>
-<div class="feature"><div class="feature-icon">♡</div><h3>Уютная атмосфера</h3><p>Пространство, в котором приятно проводить время.</p></div></div></section>
-<section class="gallery section" id="gallery"><div class="container"><div class="section-heading gallery-heading"><div><p class="subtitle">ПОЙМАЙ МОМЕНТ</p><h2>Наша маленькая<br>вселенная.</h2></div><p class="gallery-description">Несколько моментов из жизни MORNING. Приходите и создавайте свои.</p></div>
-<div class="gallery-grid"><div class="gallery-item gallery-item-large"><img src="images/IMG_7853.jpeg" alt="Собственная фотография кофейни MORNING"><div class="gallery-caption">Наше пространство</div></div>
-<div class="gallery-item"><img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=800&q=85" alt="Интерьер кофейни"><div class="gallery-caption">Атмосфера</div></div>
-<div class="gallery-item"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=85" alt="Чашка кофе"><div class="gallery-caption">Любимый напиток</div></div>
-<div class="gallery-item gallery-item-vector"><img src="images/vector-artwork.png" alt="Векторное изображение свежего хлеба"><div class="gallery-caption">Свежая выпечка</div></div></div></div></section>
-<section class="contacts section" id="contacts"><div class="container contacts-grid"><div class="contacts-info"><p class="subtitle">БУДЕМ РАДЫ ВСТРЕЧЕ</p><h2>Заглядывай<br>на чашечку кофе.</h2><p class="contacts-description">Мы всегда рады новым гостям. Приходите за любимым напитком, берите друзей или просто наслаждайтесь моментом в нашей кофейне.</p>
-<div class="contact-item"><span class="contact-icon">⌖</span><div><small>Наш адрес</small><strong>г. Санкт-Петербург, Невский проспект, 25</strong></div></div>
-<div class="contact-item"><span class="contact-icon">◷</span><div><small>Время работы</small><strong>Ежедневно: 08:00 — 22:00</strong></div></div>
-<div class="contact-item"><span class="contact-icon">✉</span><div><small>Электронная почта</small><a href="mailto:example@mail.ru">mirvi2008@gmail.ru</a></div></div>
-<div class="contact-item"><span class="contact-icon">☎</span><div><small>Телефон</small><a href="tel:+79991234567">+7 (931) 289-11-33</a></div></div></div>
-<div class="contact-form"><h3>Напишите нам</h3><p>Есть вопросы или предложения? Будем рады услышать вас.</p>
-<form action="#" method="get"><label for="name">Ваше имя</label><input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
-<label for="email">Электронная почта</label><input type="email" id="email" name="email" placeholder="example@mail.com" pattern="[^@ ]+@[^@ ]+\.[^@ ]+" title="Введите корректный адрес электронной почты с символом @" required>
-<label for="message">Сообщение</label><textarea id="message" name="message" rows="5" placeholder="Напишите что-нибудь..." required></textarea><button type="submit" class="form-button">Отправить сообщение →</button></form></div></div></section>
-<section class="qr-section"><div class="container qr-content"><div><p class="subtitle">MORNING EVERYWHERE</p><h2>Мы всегда рядом.</h2><p>Отсканируйте QR-код, чтобы открыть наш сайт на телефоне.</p></div><div class="qr-image"><img src="https://m1rv1.github.io/MorningCafe/" alt="QR-код сайта MORNING"></div></div></section>
+<section class="hero section" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow"><i></i> СТУДЕНТ · ПРИКЛАДНОЙ ИИ И НАУКА О ДАННЫХ</div>
+    <h1>Привет, я<br><span class="gradient">Михаил Васильев.</span></h1>
+    <p class="lead">Изучаю искусственный интеллект и хочу создавать нейросети, которые действительно меняют мир.</p>
+    <div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>Python</span></div>
+    <div class="actions"><a class="button" href="#about">Познакомиться <b>↓</b></a><a class="quiet-link" href="#goals">Мои цели ↗</a></div>
+    <div class="hero-stats"><div><strong>4614</strong><small>Учебная группа</small></div><div><strong>ГУАП</strong><small>Санкт-Петербург</small></div><div><strong>18</strong><small>Лет</small></div></div>
+  </div>
+  <div class="hero-art">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <div class="photo-card">
+      <!-- Замените блок .photo-placeholder на: <img src="photo.jpg" alt="Михаил Васильев"> -->
+      <div class="photo-placeholder"><div class="initials">МВ</div><b>МЕСТО ДЛЯ ФОТО</b><small>Добавьте сюда своё изображение</small></div>
+      <div class="photo-caption"><i></i><div><b>На пути в AI</b><small>Любопытство → знания → идеи</small></div></div>
+    </div>
+    <span class="float-chip chip-a">✳ &nbsp; ML / DL</span><span class="float-chip chip-b">⌘ &nbsp; Python</span><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span>
+  </div>
+</section>
+
+<div class="ticker"><div>BUILD THE FUTURE　✳　MACHINE LEARNING　✳　DEEP LEARNING　✳　KEEP EXPLORING　✳　BUILD THE FUTURE　✳</div></div>
+
+<section class="section" id="about">
+  <div class="section-title"><span>01 / ОБО МНЕ</span><h2>Интерес к технологиям<br><em>и желание создавать.</em></h2></div>
+  <div class="about-grid">
+    <article class="glass about-text">
+      <p class="big-copy">Меня зовут Михаил. Я студент направления <b>«Прикладная информатика»</b> в ГУАП, обучаюсь по программе «Прикладной искусственный интеллект и наука о данных».</p>
+      <p>Меня увлекает то, как быстро развивается искусственный интеллект и как машинное обучение помогает решать задачи, которые ещё недавно казались недостижимыми. Сейчас я самостоятельно изучаю программирование и постепенно погружаюсь в мир ML и DL.</p>
+      <p>Вне учёбы люблю компьютерные игры, баскетбол и велосипед. Мне интересно находить единомышленников, обмениваться идеями и вместе двигаться к чему-то большему.</p>
+    </article>
+    <aside class="facts">
+      <div><small>ФИО</small><b>Васильев Михаил</b></div>
+      <div><small>ВОЗРАСТ</small><b>18 лет</b></div>
+      <div><small>ГОРОД</small><b>Санкт-Петербург</b></div>
+      <div><small>УНИВЕРСИТЕТ / ГРУППА</small><b>ГУАП · 4614</b></div>
+      <div><small>ИНТЕРЕСЫ</small><b>ML · DL · AI</b></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="education">
+  <div class="section-title"><span>02 / ОБРАЗОВАНИЕ И МОТИВАЦИЯ</span><h2>Почему именно<br><em>искусственный интеллект?</em></h2></div>
+  <div class="feature-grid">
+    <article class="feature feature-primary"><div class="feature-icon">✳</div><small>МОЙ ИНТЕРЕС</small><h3>Технологии,<br>которые учатся.</h3><p>Больше всего меня привлекают машинное обучение (ML) и глубокое обучение (DL). Эти направления позволяют создавать системы, способные находить закономерности, учиться на данных и помогать людям.</p></article>
+    <article class="feature"><div class="feature-icon">◎</div><small>ПОЧЕМУ ГУАП</small><h3>Найти своих<br>единомышленников.</h3><p>От обучения я жду не только новых знаний, но и возможности познакомиться с людьми, которым так же интересны технологии, обмениваться опытом и создавать что-то вместе.</p></article>
+    <article class="feature"><div class="feature-icon">⌁</div><small>МОЙ ПОДХОД</small><h3>Учиться<br>самостоятельно.</h3><p>Я уже знаком с Python, C# и основами C++. Многое изучаю самостоятельно, практикуюсь и использую ИИ-инструменты как помощников в учёбе.</p></article>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="section-title"><span>03 / МОИ НАВЫКИ</span><h2>Фундамент для<br><em>больших идей.</em></h2></div>
+  <div class="skills-grid">
+    <div class="skills-intro"><p>Я в начале профессионального пути, поэтому сейчас для меня особенно важны любознательность, практика и готовность разбираться в новых инструментах.</p><div class="note">↗ &nbsp; Уровень навыков не измеряю цифрами — продолжаю учиться и закреплять знания на практике.</div></div>
+    <div class="skill-list">
+      <div class="skill-group"><h3>Языки программирования</h3><div class="pills"><span>Python</span><span>C#</span><span>C++ · основы</span></div></div>
+      <div class="skill-group"><h3>Направления интереса</h3><div class="pills"><span>Machine Learning</span><span>Deep Learning</span><span>Искусственный интеллект</span></div></div>
+      <div class="skill-group"><h3>Хочу изучить дальше</h3><div class="pills"><span class="future">React</span><span class="future">Backend API</span><span class="future">Больше ML / DL</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-title"><span>04 / ДОСТИЖЕНИЯ</span><h2>Первые результаты<br><em>и новые горизонты.</em></h2></div>
+  <div class="achievement glass"><div class="achievement-number">02</div><div><small>КОНФЕРЕНЦИИ</small><h3>Две победы в конференциях</h3><p>Участие в конференциях стало для меня важным опытом и подтверждением того, что интересно развиваться, исследовать и представлять свои идеи.</p><small class="muted">Названия конференций и годы можно добавить позднее.</small></div><span class="achievement-star">✦</span></div>
+</section>
+
+<section class="section" id="goals">
+  <div class="section-title"><span>05 / МОИ ЦЕЛИ</span><h2>От интереса —<br><em>к настоящим разработкам.</em></h2></div>
+  <div class="goal-card"><small>МОЯ ПРОФЕССИОНАЛЬНАЯ ЦЕЛЬ</small><h3>AI Engineer</h3><p>В будущем я хочу стать инженером искусственного интеллекта и работать над созданием современных AI-систем. Мне особенно близка идея развивать сильные нейросетевые технологии в России — создавать качественные, полезные и конкурентоспособные решения.</p><div class="goal-bottom"><div><small>КОМПАНИЯ-МЕЧТА</small><b>Google</b></div><div><small>ДОЛГОСРОЧНАЯ ЦЕЛЬ</small><b>Развивать AI в России</b></div></div></div>
+</section>
+
+<section class="section">
+  <div class="section-title"><span>06 / ЗА ПРЕДЕЛАМИ IT</span><h2>Баланс — тоже<br><em>часть развития.</em></h2></div>
+  <div class="hobbies"><article><span>🎮</span><h3>Компьютерные игры</h3><p>Люблю игры и цифровые миры.</p></article><article><span>🏀</span><h3>Баскетбол</h3><p>Движение, команда и азарт.</p></article><article><span>🚴</span><h3>Велосипед</h3><p>Перезагрузка и новые маршруты.</p></article></div>
+</section>
+
+<section class="contact-section section" id="contacts">
+  <span class="section-title-label">07 / КОНТАКТЫ</span><h2>Открыт к новым<br><span class="gradient">идеям и знакомствам.</span></h2>
+  <p>Буду рад общению с людьми, которым интересны искусственный интеллект, машинное обучение и разработка.</p>
+  <div class="contact-links"><a href="https://t.me/Mirvi2008" target="_blank" rel="noopener noreferrer">Telegram <b>↗</b></a><a href="https://github.com/M1rv1" target="_blank" rel="noopener noreferrer">GitHub <b>↗</b></a><a href="mailto:mirvi2008@gmail.com">Email <b>↗</b></a></div>
+</section>
 </main>
-<footer class="footer"><div class="container footer-content"><a href="#home" class="logo footer-logo">MORNING<span>.</span></a><p class="copyright">© 2026 MORNING. Все права защищены.</p><div class="social-links"><a href="https://vk.ru/id616562333" target="_blank" rel="noopener noreferrer">VK</a><a href="https://t.me/Mirvi2008" target="_blank" rel="noopener noreferrer">TG</a></div></div></footer>
-</body></html>
+
+<footer class="footer"><a class="brand" href="#home"><span class="brand-mark">МВ</span> Михаил Васильев</a><span>Сайт-визитка · 2026</span><a href="#home">Наверх ↑</a></footer>
+<script src="script.js"></script>
+</body>
+</html>
