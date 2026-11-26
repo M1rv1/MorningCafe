@@ -4,6 +4,14 @@
 @media(prefers-reduced-motion:no-preference){.photo-card{animation:float 7s ease-in-out infinite}.float-chip{animation:float 5s ease-in-out infinite alternate}.section{animation:fade-up .7s ease both}@keyframes float{0%,100%{translate:0 0}50%{translate:0 -10px}}@keyframes fade-up{from{opacity:.6;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}}
 
 /* Orange palette */
+ .profile-photo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+  border-radius:17px;
+}
 body{
   background:#160d08;
   background-image:
@@ -40,3 +48,9 @@ body{
 .contact-section{background:radial-gradient(ellipse at 50% 40%,#a84d1e55,transparent 55%),#140c08;border-top-color:#ffb45c18}
 .contact-links a{border-color:#ffb45c38;background:#ffb45c08}
 .contact-links a b{color:#ffc15a}
+.contact-actions{display:flex;align-items:center;justify-content:center;gap:28px;margin-top:30px}
+.contact-actions .contact-links{margin:0}
+.contact-qr{display:flex;align-items:center;gap:12px;padding:10px 14px;border:1px solid #ffb45c38;border-radius:12px;background:#ffb45c08;text-align:left;font-size:11px;font-weight:700}
+.contact-qr img{width:90px;height:90px;padding:4px;border-radius:7px;background:#fff}
+.contact-qr span b{color:#ffc15a}
+@media(max-width:600px){.contact-actions{flex-direction:column;gap:20px;margin-top:25px}.contact-actions .contact-links{margin:0 auto 0}.contact-qr{align-self:center}}
